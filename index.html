@@ -37,7 +37,7 @@
 </head>
 <body>
     <!-- nav bar for webversion -->
-    <nav class="flex items-center justify-between py-8  mx-[8%]">
+    <nav class="lg:flex hidden items-center justify-between py-8  mx-[8%]">
         <h1 class="text-4xl font-semibold ">Games</h1>
         <ul class="flex items-center gap-5 text-[#424247]">
             <li><a href="#home">home</a></li>
@@ -54,17 +54,34 @@
         </div>
     </nav>
     <!-- nav bar for webversion -->
+
+    <!-- nav bar for mobile bersion -->
+    <nav class="lg:hidden flex items-center justify-between py-8  mx-[8%] relative">
+      <div class="dropdown dropdown-right">
+        <div tabindex="0" role="button"> <i class="fa-solid fa-bars"></i></div>
+        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow mt-10 backdrop-blur-lg rounded-xl bg-[#49D293] ounded-box w-52">
+          <li><a>Item 1</a></li>
+          <li><a>Item 2</a></li>
+        </ul>
+      </div>
+
+      <h1 class="text-2xl font-semibold ">Games</h1>
+      <div class="flex items-center gap-6">
+          <button class="block px-4 py-2 bg-[#49D293] rounded-lg text-white">
+              Get Ticket
+          </button>
+      </div>
+  </nav>
+    <!-- nav bar for mobile bersion -->
+
     <header class="mx-[8%]  mb-[70px]">
         <div>
             <div class="carousel w-full">
                 <!-- single carusel -->
-                <div id="slide1" class="carousel-item relative w-full">
+                <div id="slide1" class="carousel-item  relative w-full">
 
                   <img src="Images/1.png" class="max-w-[100%]" />
-                  <div class="px-7 py-5 bg-[#131318] absolute z-20 rounded-xl text-white max-w-[450px] bottom-5 right-5">
-                        <h1 class="text-2xl ">Meet all the heroes from the field</h1>
-                        <p class="text-[15px] mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                  </div>
+                 
                   <div class="absolute flex gap-4 bottom-5 left-5">
                     <a href="#slide4" class="btn btn-circle p-3">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
@@ -74,10 +91,7 @@
                 <div id="slide2" class="carousel-item relative w-full">
 
                   <img src="Images/1.png" class="max-w-[100%]" />
-                  <div class="px-7 py-5 bg-[#131318] absolute z-20 rounded-xl text-white max-w-[450px] bottom-5 right-5">
-                        <h1 class="text-2xl ">Meet all the heroes from the field</h1>
-                        <p class="text-[15px] mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                  </div>
+                 
                   <div class="absolute flex gap-4 bottom-5 left-5">
                     <a href="#slide1" class="btn btn-circle p-3">❮</a> 
                     <a href="#slide3" class="btn btn-circle">❯</a>
@@ -87,15 +101,16 @@
                 <div id="slide3" class="carousel-item relative w-full">
 
                   <img src="Images/1.png" class="max-w-[100%]" />
-                  <div class="px-7 py-5 bg-[#131318] absolute z-20 rounded-xl text-white max-w-[450px] bottom-5 right-5">
-                        <h1 class="text-2xl ">Meet all the heroes from the field</h1>
-                        <p class="text-[15px] mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                  </div>
+                 
                   <div class="absolute flex gap-4 bottom-5 left-5">
                     <a href="#slide2" class="btn btn-circle p-3">❮</a> 
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
+              </div>
+              <div class="px-7 py-5 bg-[#131318] lg:absolute lg:right-[150px] lg:bottom-2 mt-5 rounded-xl text-white lg:max-w-[400px] w-full ">
+                <h1 class="text-2xl ">Meet all the heroes from the field</h1>
+                <p class="text-[15px] mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
               </div>
         </div>
        
@@ -154,7 +169,47 @@
         <!-- Professional Hockeys Club -->
 
         <!-- Program Sections -->
-         
+          <section> 
+            <div class="border-y  border-dashed border-[#13131833] py-10 mx-auto w-[70%]">
+              <h1 class="text-4xl font-semibold text-center ">Program Sections</h1>
+                <p class="max-w-[500px] mx-auto text-[16px] text-center mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+              <div class="flex flex-wrap sm:flex-row lg:flex-row flex-col gap-5  my-10">
+                  <div class="lg:max-w-[49%] sm:max-w-[45%]  max-w-[100%] relative z-10">
+                     <img src="Images/2.png" alt=" " class="h-[300px] rounded-2xl -z-10 object-cover">
+                     <div class="absolute h-[100%] w-full bg-black top-0 opacity-40 rounded-2xl"></div>
+                     <div class="absolute  bottom-4 text-white px-7 py-5 ">
+                        <h1 class="text-3xl font-bold  ">Junior Program</h1>
+                        <p class="text-[15px] mt-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                        </p>
+                        <button class="px-7 py-3 text-center mt-3 bg-[#49D293] rounded-lg">Register Now!</button>
+                     </div>
+                  </div>
+                  <div class="lg:max-w-[49%] sm:max-w-[45%] max-w-[100%] relative z-10">
+                     <img src="Images/3.png"  alt=" " class="h-[300px] rounded-2xl -z-10 object-cover">
+                     <div class="absolute h-[100%] w-full bg-black top-0 opacity-40 rounded-2xl"></div>
+                     <div class="absolute  bottom-4 text-white px-7 py-5 ">
+                        <h1 class="text-3xl font-bold  ">Junior Program</h1>
+                        <p class="text-[15px] mt-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                        </p>
+                        <button class="px-7 py-3 text-center mt-3 bg-[#49D293] rounded-lg">Register Now!</button>
+                     </div>
+                  </div>
+                  <div class="max-w-[100%] h-[300px] relative z-10  col-span-2">
+                     <img src="Images/4.png" alt=" " class="-z-10 object-cover rounded-2xl  h-[300px]">
+                     <div class="absolute h-[100%] w-full bg-black top-0 opacity-40 rounded-2xl"></div>
+                     <div class="absolute  bottom-4 text-white px-7 py-5 ">
+                        <h1 class="text-3xl font-bold  ">Junior Program</h1>
+                        <p class="text-[15px] max-w-[500px] mt-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                        </p>
+                        <button class="px-7 py-3 text-center mt-3 bg-[#49D293] rounded-lg">Register Now!</button>
+                     </div>
+                  </div>
+              </div>
+          </section>
         <!-- Program Sections -->
 
         <!-- Our New Products -->
@@ -463,7 +518,7 @@
         <!-- Get In Touch -->
           <section class="mt-10">
             <div class="border-y  border-dashed border-[#13131833] py-10 mx-auto w-[70%]">
-              <h1 class="text-4xl font-semibold text-center ">Clients Question</h1>
+              <h1 class="text-4xl font-semibold text-center ">Get In Touch</h1>
                 <p class="max-w-[500px] mx-auto text-[16px] text-center mt-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
             </div>
 
@@ -496,8 +551,8 @@
                 <!-- right -->
                 <div class="lg:-w-[60%] max-w-[100%] flex flex-col">
                    <!-- top -->
-                   <div class="flex gap-5 mt-7">
-                        <div>
+                   <div class="flex lg:flex-row flex-col gap-5 mt-7">
+                        <div class="">
                           <p class="text-[18px] font-bold">Your Name</p>
                             <div class="px-5 py-3 rounded-lg mt-4 bg-[#13131808]">
                               <input type="text" placeholder="Enter your full name" required class="block border-0 focus:outline-0 bg-transparent placeholder:text-[13px] w-[250px]">
@@ -511,7 +566,7 @@
                         </div>
                    </div>
                    <!--second top -->
-                   <div class="flex gap-5 mt-7">
+                   <div class="flex gap-5 lg:flex-row flex-col mt-7">
                         <div>
                           <p class="text-[18px] font-bold">Your Name</p>
                             <div class="px-5 py-3 rounded-lg mt-4 bg-[#13131808]">
@@ -554,8 +609,8 @@
         <!-- Social Media -->
     </main>
     <footer class="bg-black mt-[60px]  lg:px-[8%] px-[4%] py-10 text-white">
-        <div class="flex lg:flex-row items-center gap-10 justify-between flex-col">
-            <div class="max-w-[40%] flex flex-col gap-4">
+        <div class="flex lg:flex-row items-center  gap-10 justify-between flex-col">
+            <div class="lg:max-w-[40%] w-[80%] lg:items-start items-center lg:text-left text-center flex flex-col gap-4">
               <h1 class="text-2xl font-bold text-left">Get In Touch</h1>
               <p class="text-[16px] ">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
               <div class="flex gap-3">
